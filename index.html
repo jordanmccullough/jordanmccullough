@@ -13,22 +13,36 @@
 				font-family: ModernPictos;
 			}
 
-			.iconify{
+			
+
+			/*Dirty Picto Implementation*/
+			.pictos{
+				font-family: ModernPictos;
+				margin-right: 1em;
+			}
+			.dirty{
+				margin: 0;
+				padding: 0;
 				list-style-type: none;
-				font-size: 2em;
+			}
+
+			/*Clean Picto Implementation*/
+			.iconify{
+				position: relative;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
 			}
 				.iconify li{
-					margin: 0;
-					padding: .5em 0 .5em 1em;
+					padding: 0 0 0 2em;
 				}
 				.iconify li:before{
 					font-family: ModernPictos;
 					position: absolute;
 					height: 1em;
 					width: 1em;
-					left: 1em;
+					left: 0;
 				}
-
 			.a:before{
 				content: 'a';
 			}
@@ -42,18 +56,29 @@
 	</head>
 
 	<body>
-		<h1>Font Icon Friendly</h1>
-		<h2>Accessible font-based iconography implementation</h2>
+		<header>
+			<h1>Font Icon Friendly</h1>
+			<h2>Accessible font-based iconography implementation</h2>
+		</header>
 
-		<h3>Exposed Characters</h3>
-		<h4>Also Known As: How to confuse accessible usage</h4>
-		<p class="sample">abcdefghijklmnopqrstuvwxyz</p>
+		<section>
+			<h3>Dirty Characters</h3>
+			<h4>Also Known As: How to confuse accessible usage</h4>
+			<ul class="dirty">
+				<li><span class="pictos">a</span>Item One</li>
+				<li><span class="pictos">b</span>Item Two</li>
+				<li><span class="pictos">c</span>Item Three</li>
+			</ul>
+		</section>
 
-		<h3>Hidden through 'Content' Magic</h3>
-		<ul class="iconify">
-			<li class="a">Item One</li>
-			<li class="b">Item Two</li>
-			<li class="c">Item Three</li>
-		</ul>
+		<section>
+			<h3>Unpolluted Accessible List</h3>
+			<h4>Pictos through ::before Pseudo Element &amp; 'Content'</h4>
+			<ul class="iconify">
+				<li class="a">Item One</li>
+				<li class="b">Item Two</li>
+				<li class="c">Item Three</li>
+			</ul>
+		</section>
 	</body>
 </html>
