@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Font Icon Friendly</title>
+		<style type="text/css">
+			@font-face{
+				font-family: 'ModernPictos';
+				src: url(modernpics.otf);
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			p.sample{
+				font-family: ModernPictos;
+			}
+
+			.iconify{
+				list-style-type: none;
+				font-size: 2em;
+			}
+				.iconify li{
+					margin: 0;
+					padding: .5em 0 .5em 1em;
+				}
+				.iconify li:before{
+					font-family: ModernPictos;
+					position: absolute;
+					height: 1em;
+					width: 1em;
+					left: 1em;
+				}
+
+			.a:before{
+				content: 'a';
+			}
+			.b:before{
+				content: 'b';
+			}
+			.c:before{
+				content: 'c';
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Font Icon Friendly</h1>
+		<h2>Accessible font-based iconography implementation</h2>
+
+		<h3>Exposed Characters</h3>
+		<h4>Also Known As: How to confuse accessible usage</h4>
+		<p class="sample">abcdefghijklmnopqrstuvwxyz</p>
+
+		<h3>Hidden through 'Content' Magic</h3>
+		<ul class="iconify">
+			<li class="a">Item One</li>
+			<li class="b">Item Two</li>
+			<li class="c">Item Three</li>
+		</ul>
+	</body>
+</html>
