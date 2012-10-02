@@ -39,8 +39,6 @@
 				float: left;
 			}
 
-
-
 			@font-face{
 				font-family: 'ModernPictos';
 				src: url(modernpics.otf);
@@ -48,15 +46,11 @@
 				font-style: normal;
 			}
 
-
-
-
 			p.sample{
 				font-family: ModernPictos;
 			}
-
 			
-
+			/*=======Styling of Interest========*/
 			/*Dirty Picto Implementation*/
 			.pictos{
 				font-family: ModernPictos;
@@ -83,12 +77,15 @@
 					position: absolute;
 					height: 1em;
 					width: 1em;
-					line-height: 1.15em;
+					line-height: 1.15em; /*Correction for this specific picto-font's 1em sizing*/
 					text-align: center;
 					left: 0;
 					text-shadow: 1px 1px 1px white;
-					line-height: 1.3em; /*Default line height 1em + 2x line-height offset*/
+					line-height: 1.3em; /*Default line height 1em + 2x0.15em line-height offset*/
 				}
+
+			/*Class names could be more useful for globalization*/
+			/*For example, .a would be more useful in a production enviroment as .newspaper*/
 			.a:before{
 				content: 'a';
 			}
@@ -103,7 +100,7 @@
 			/*Fancy*/
 			.fancy .iconify li{
 				margin: .5em 0 .5em 0; /*2x padding of .fancy icon*/
-				line-height: 1.75em; /*Default line height 1em + 2x padding of .fancy icon*/
+				line-height: 1.75em; /*Default line height 1em + 2x0.25em padding of .fancy icon*/
 			}
 			.fancy .iconify li:before{
 				background: white;
@@ -116,17 +113,11 @@
 	</head>
 
 	<body>
-
-
-
-
-		
 		<header>
 			<div class="icon"></div>
 			<h1>Pictos &amp; CSS3</h1>
 			<h2>Friendly Pictogram Implementation</h2>
 		</header>
-
 
 		<h2>Benefits</h2>
 		<p>
@@ -165,6 +156,5 @@
 				<li class="c">Item Three</li>
 			</ul>
 		</section>
-
 	</body>
 </html>
