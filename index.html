@@ -1,10 +1,34 @@
 <html>
 	<head>
-		<title>Font Icon Friendly</title>
+		<title>Pictos &amp; CSS3</title>
 		<style type="text/css">
 			*{
 				background: rgb(240,240,240);
 				font-family: Helvetica, sans-serif;
+			}
+			header{
+				color: #666;
+				background: white;
+				text-align: center;
+			}
+			header h1{
+				text-shadow: 0 0 .5em white;
+				margin: 0;
+				padding: 0;
+			}
+			header h2{
+				font-weight: normal;
+				margin: 0;
+			}
+			header h1::after{
+				font-family: ModernPictos;
+				position: absolute;
+				left: 0;
+				top: 0em;
+				content: 'jlskdfiqzt';
+				font-size: 250%;
+				opacity: .1;
+				text-shadow: 0 0 1.5em white;
 			}
 			h1,h2,h3{
 				text-shadow: 1px 1px .15em #aaa;
@@ -23,16 +47,7 @@
 				font-weight: normal;
 				font-style: normal;
 			}
-			.icon{
-				float: right;
-			}
-			/*Page Styling--Just for Looks*/
-			.icon:before{
-				font-family: ModernPictos;
-				content: 'r';
-				font-size: 1000%;
-				text-shadow: 0 0 .5em white;
-			}
+
 
 
 
@@ -105,21 +120,27 @@
 
 
 
-		<div class="icon"></div>
+		
 		<header>
-			<h1>Font Icon Friendly</h1>
-			<p>Accessible font-based iconography implementation</p>
+			<div class="icon"></div>
+			<h1>Pictos &amp; CSS3</h1>
+			<h2>Friendly Pictogram Implementation</h2>
 		</header>
 
 
 		<h2>Benefits</h2>
+		<p>
+			Avoiding unnecessary characters, used only for stylistic/visual cues, within markup is an important aspect of design. Not only does this approach keep visual elements in CSS where it belongs, but prevents polluting markup for accessibility and crawlability.
+		</p>
 
 		<h2>Caveats</h2>
+		<p>
+			Line-height isn't applied as an inline character for the representative character would.
+		</p>
 
 		<h2>Examples</h2>
 		<section>
 			<h3>Dirty</h3>
-			<h4>Also Known As: How to confuse accessible usage</h4>
 			<ul class="dirty">
 				<li><span class="pictos">a</span>Item One</li>
 				<li><span class="pictos">b</span>Item Two</li>
@@ -129,7 +150,6 @@
 
 		<section>
 			<h3>Simple</h3>
-			<h4>Pictos through ::before Pseudo Element &amp; 'Content'</h4>
 			<ul class="iconify">
 				<li class="a">Item One</li>
 				<li class="b">Item Two</li>
@@ -139,7 +159,6 @@
 
 		<section class="fancy">
 			<h3>Stylin'</h3>
-			<h4>Easier-to-Style Elements</h4>
 			<ul class="iconify">
 				<li class="a">Item One</li>
 				<li class="b">Item Two</li>
