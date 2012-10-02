@@ -2,12 +2,39 @@
 	<head>
 		<title>Font Icon Friendly</title>
 		<style type="text/css">
+			*{
+				background: rgb(240,240,240);
+				font-family: Helvetica, sans-serif;
+			}
+			h1,h2,h3{
+				text-shadow: 1px 1px .15em #aaa;
+			}
+			section{
+				width: 31%;
+				padding: 0 1% 0 1%;
+				float: left;
+			}
+
+
+
 			@font-face{
 				font-family: 'ModernPictos';
 				src: url(modernpics.otf);
 				font-weight: normal;
 				font-style: normal;
 			}
+			.icon{
+				float: right;
+			}
+			/*Page Styling--Just for Looks*/
+			.icon:before{
+				font-family: ModernPictos;
+				content: 'r';
+				font-size: 1000%;
+				text-shadow: 0 0 .5em white;
+			}
+
+
 
 			p.sample{
 				font-family: ModernPictos;
@@ -41,7 +68,11 @@
 					position: absolute;
 					height: 1em;
 					width: 1em;
+					line-height: 1.15em;
+					text-align: center;
 					left: 0;
+					text-shadow: 1px 1px 1px white;
+					line-height: 1.3em; /*Default line height 1em + 2x line-height offset*/
 				}
 			.a:before{
 				content: 'a';
@@ -52,17 +83,42 @@
 			.c:before{
 				content: 'c';
 			}
+
+
+			/*Fancy*/
+			.fancy .iconify li{
+				margin: .5em 0 .5em 0; /*2x padding of .fancy icon*/
+				line-height: 1.75em; /*Default line height 1em + 2x padding of .fancy icon*/
+			}
+			.fancy .iconify li:before{
+				background: white;
+				padding: .25em;
+				border-radius: 1em;
+				border: solid 1px #ccc;
+				box-shadow: 1px 1px .25em rgba(0,0,0,.25);
+			}
 		</style>
 	</head>
 
 	<body>
+
+
+
+
+		<div class="icon"></div>
 		<header>
 			<h1>Font Icon Friendly</h1>
-			<h2>Accessible font-based iconography implementation</h2>
+			<p>Accessible font-based iconography implementation</p>
 		</header>
 
+
+		<h2>Benefits</h2>
+
+		<h2>Caveats</h2>
+
+		<h2>Examples</h2>
 		<section>
-			<h3>Dirty Characters</h3>
+			<h3>Dirty</h3>
 			<h4>Also Known As: How to confuse accessible usage</h4>
 			<ul class="dirty">
 				<li><span class="pictos">a</span>Item One</li>
@@ -72,7 +128,7 @@
 		</section>
 
 		<section>
-			<h3>Unpolluted Accessible List</h3>
+			<h3>Simple</h3>
 			<h4>Pictos through ::before Pseudo Element &amp; 'Content'</h4>
 			<ul class="iconify">
 				<li class="a">Item One</li>
@@ -80,5 +136,16 @@
 				<li class="c">Item Three</li>
 			</ul>
 		</section>
+
+		<section class="fancy">
+			<h3>Stylin'</h3>
+			<h4>Easier-to-Style Elements</h4>
+			<ul class="iconify">
+				<li class="a">Item One</li>
+				<li class="b">Item Two</li>
+				<li class="c">Item Three</li>
+			</ul>
+		</section>
+
 	</body>
 </html>
