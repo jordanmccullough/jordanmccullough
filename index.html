@@ -97,7 +97,7 @@
 			}
 
 
-			/*Fancy*/
+			/*Fancy & Easy*/
 			.fancy .iconify li{
 				margin: .5em 0 .5em 0; /*2x padding of .fancy icon*/
 				line-height: 1.75em; /*Default line height 1em + 2x0.25em padding of .fancy icon*/
@@ -108,6 +108,13 @@
 				border-radius: 1em;
 				border: solid 1px #ccc;
 				box-shadow: 1px 1px .25em rgba(0,0,0,.25);
+			}
+
+
+			/*Accessible*/
+			[data-icon]:before{
+				content: attr(data-icon);
+				color: red;
 			}
 		</style>
 	</head>
@@ -156,5 +163,16 @@
 				<li class="c">Item Three</li>
 			</ul>
 		</section>
+
+		<section class="accessible">
+			<h3>Accessible</h3>
+			<ul class="iconify">
+				<li aria-hidden="true" data-icon="a">Item One</li>
+				<li aria-hidden="true" data-icon="b">Item Two</li>
+				<li aria-hidden="true" data-icon="d">Item Three</li>
+			</ul>
+		</section>
+
+		
 	</body>
 </html>
