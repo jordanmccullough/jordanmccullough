@@ -2,18 +2,19 @@
 
 ---
 
-@import "bootstrap.scss";
+@import "bootstrap-sass/lib/bootstrap.scss";
+@import "primer/primer.scss";
 
 $color-primary: rgb(106,38,68);
 $color-secondary: rgb(43,0,29);
 $color-bright: rgb(244,244,244);
 $color-dark: #3a3a3a;
-$color-light: #ccc;
+$color-light: #f3f3f3;
 
 body{
- font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
- font-weight: 300;
- color: $color-dark;
+ // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ // font-weight: 300;
+ // color: $color-dark;
 }
 
 a{
@@ -21,11 +22,6 @@ a{
 }
 
 .home{
-  h1,h2,h3,h4,h5{
-    font-weight: inherit;
-    margin: 0;
-  }
-
   ul{
     margin: 0;
     padding: 0;
@@ -50,16 +46,6 @@ a{
     height: 400px;
     margin-top: -100px; //Nav height
     padding-top: 100px;
-
-    h2{
-      font-size: 42px;
-      font-weight: 500px;
-      margin-bottom: 40px;
-      width: 500px;
-    }
-    p{
-
-    }
   }
 }
 
