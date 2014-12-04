@@ -71,14 +71,7 @@ layout: home
 
 
 <div class="container training">
-  <h1>Training</h1>
-
-
-  <div class="row">
-    <div class="col-md-6 vertical-divider grid">left</div>
-    <div class="col-md-6 text-center">right</div>
-  </div>
-
+  <h2>Training</h2>
 
 
 
@@ -95,14 +88,18 @@ layout: home
 
     <div class="col-md-4 vertical-divider grid">
       <div class="col-md-4 text-center">
-        <h4 class="horizontal-divider">$80</h4>
-        <p>per student</p>
+        <h4 class="horizontal-divider">$6,500</h4>
+        <p>25 <small>students</small></p>
+      </div>
 
-        <div class="col-md-4"></div>
+      <div class="col-md-4 text-center">
+        <h4 class="horizontal-divider">$8,500</h4>
+        <p>50 <small>students</small></p>
+      </div>
 
-        <div class="col-md-4"></div>
-
-        <div class="col-md-4"></div>
+      <div class="col-md-4 text-center">
+        <h4 class="horizontal-divider">$12,500</h4>
+        <p>75 <small>students</small></p>
       </div>
     </div>
 
