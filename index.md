@@ -2,4 +2,125 @@
 layout: home
 ---
 
-Hello
+<div class="row">
+  <div class="container">
+    <div class="col-md-6">
+      <p>Streamline your GitHub Enterprise setup with the help of GitHub Professional Services. Our team of experts delivers initial setup assistance, continuing education and custom integrations. Realize the value of your GitHub investment as quickly as possible through our time-saving techniques and best practices.</p>
+    </div>
+    <div class="col-md-6">
+
+    </div>
+  </div>
+</div>
+
+<div class="row container-dim">
+  <div class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <p>Streamline your GitHub Enterprise setup with the help of GitHub Professional Services. Our team of experts delivers initial setup assistance, continuing education and custom integrations. Realize the value of your GitHub investment as quickly as possible through our time-saving techniques and best practices.</p>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+
+<div class="container proserv">
+    <h1>Professional Services</h1>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-3"><h2>Quickstart</h2></div>
+      <div class="col-md-3"><h2>Training</h2></div>
+      <div class="col-md-3"><h2>Consulting</h2></div>
+    </div>
+
+    <div class="row horizontal-divider">
+      <div class="col-md-3">
+        <h3>Objectives</h3>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li>Instance setup and configuration</li>
+          <li>Administration, command line utilties, and audit log review</li>
+          <li>Sample repository creation</li>
+          <li>GitHub feature mapping to team requirements</li>
+          <li>Version control best practices and workflow discussion</li>
+          <li>Introduction to Git DVCS, command line use</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li>Classroom instruction on GitHub terminology and patterns</li>
+          <li>Lab-based learning of the GitHub Flow</li>
+          <li>Exploration of GitHub for Desktop client applications</li>
+          <li>Demonstration of command line interaction with GitHub</li>
+          <li>Skills exam and certification</li>
+          <li>Project and team-specific GitHub process mapping</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li>Extended configuration and custom setup assistance</li>
+          <li>Roll-out planning with GitHub instance owners, team leads</li>
+          <li>Customized best practices and workflow strategies</li>
+          <li>Direct assistance with third-party tool integrations</li>
+          <li>Repository migration from legacy version control systems</li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+
+<div class="container training">
+  <h1>Training</h1>
+
+
+  <div class="row">
+    <div class="col-md-6 vertical-divider grid">left</div>
+    <div class="col-md-6 text-center">right</div>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-4"><h2>Online</h2></div>
+    <div class="col-md-5"><h2>In-Person</h2></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <h3>Pricing</h3>
+    </div>
+
+    <div class="col-md-4 vertical-divider grid">
+      <div class="col-md-4 text-center">
+        <h4 class="horizontal-divider">$80</h4>
+        <p>per student</p>
+
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <div class="col-md-5 grid">
+      <div class="col-md-4 text-center">
+        <h4 class="horizontal-divider">$6,500</h4>
+        <p>25 <small>students</small></p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <h4 class="horizontal-divider">$8,500</h4>
+        <p>50 <small>students</small></p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <h4 class="horizontal-divider">$12,500</h4>
+        <p>75 <small>students</small></p>
+      </div>
+    </div>
+  </div>
+</div>
