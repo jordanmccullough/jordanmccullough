@@ -1,3 +1,3 @@
 sass:
-  sass_dir: assets/vendor/bootstrap-sass/lib/
+  sass_dir: assets/vendor/
   style: :compressed
