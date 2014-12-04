@@ -1,0 +1,10 @@
+{
+  "name": "proserv",
+  "dependencies": {
+
+    "jquery": "2.1.1",
+    "bootstrap-sass": "3.0.2",
+    "octicons": "https://github.com/github/octicons.git#2.1.2",
+    "primer": "https://github.com/github/primer.git#0.39.0"
+  }
+}

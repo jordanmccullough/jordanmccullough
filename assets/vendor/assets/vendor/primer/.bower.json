@@ -1,0 +1,22 @@
+{
+  "name": "primer",
+  "version": "0.39.0",
+  "ignore": [
+    ".gitignore",
+    ".scss-lint.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "Rakefile",
+    "script/"
+  ],
+  "homepage": "https://github.com/github/primer",
+  "_release": "0.39.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.39.0",
+    "commit": "c7431065bb06cc1fa3d0005fb9c48f3fd1cd693d"
+  },
+  "_source": "https://github.com/github/primer.git",
+  "_target": "0.39.0",
+  "_originalSource": "https://github.com/github/primer.git"
+}
