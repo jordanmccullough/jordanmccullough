@@ -10,15 +10,47 @@ $color-secondary: rgb(43,0,29);
 $color-bright: rgb(244,244,244);
 $color-dark: #3a3a3a;
 $color-light: #f3f3f3;
+$color-white: #ffffff;
+
 
 body{
- // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
- // font-weight: 300;
- // color: $color-dark;
+  position: relative;
 }
 
 a{
-  color: $color-secondary;
+  // color: $color-secondary;
+}
+
+
+
+.sub-nav{
+  width: 100%;
+  z-index: 1000;
+  border-bottom: solid 1px transparent;
+
+  -webkit-transition: background 500ms, border 500ms;
+  transition: background 500ms, border 500ms;
+
+  li{
+    display: inline-block;
+    margin-top: 10px;
+
+    .filter-item{
+      width: 150px;
+    }
+  }
+
+  &.affix-top{
+    position: absolute;
+    top: 400px;
+  }
+  &.affix{
+    top: 0;
+    background: $color-primary;
+    background: rgba($color-white, .8);
+    border-bottom: solid 1px $color-light;
+  }
+
 }
 
 .home{
@@ -28,7 +60,7 @@ a{
     list-style: none;
 
     li{
-      margin-bottom: 1em;
+      // margin-bottom: 1em;
 
       &:last-child{
         margin-bottom: 0;
@@ -36,9 +68,9 @@ a{
     }
   }
 
-  a{
-    color: $color-bright;
-  }
+  // a{
+  //   color: $color-bright;
+  // }
 
   .jumbotron{
     background: $color-primary;
@@ -46,7 +78,16 @@ a{
     height: 400px;
     margin-top: -100px; //Nav height
     padding-top: 100px;
+
+
+    background-image: url(../images/tool-set.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 50%;
   }
+
+
 }
 
 .container-dim{
