@@ -1,6 +1,7 @@
 ---
 layout: home
 ---
+<h1 id="top"></h1>
 
 <div id="sub-nav" class="sub-nav" data-spy="affix" data-offset-top="400">
   <ul class="nav filter-list text-center">
@@ -9,10 +10,6 @@ layout: home
     <li><a href="#training" class="filter-item">Training</a></li>
   </ul>
 </div>
-
-<h1 id="top"></h1>
-<p>HEllo</p>
-
 
 <h2 id="overview">Overview</h2>
 
