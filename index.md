@@ -1,7 +1,6 @@
 ---
 layout: home
 ---
-<h1 id="top"></h1>
 
 <div id="sub-nav" class="sub-nav" data-spy="affix" data-offset-top="400">
   <ul class="nav filter-list text-center">
