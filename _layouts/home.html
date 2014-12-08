@@ -3,6 +3,30 @@ layout: default
 body_class: home
 ---
 
+<nav class="navbar navbar-proserv" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><div class="branding"><span>GitHub Professional Services<span></div></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <div class="jumbotron">
   <div class="container">
     <div class="row">
@@ -17,29 +41,4 @@ body_class: home
   </div>
 </div>
 
-
-
-<div class="sub-nav" data-spy="affix" data-offset-top="400">
-  <ul class="filter-list text-center">
-    <li>
-      <a href="#first" class="filter-item selected">
-        First filter
-      </a>
-    </li>
-    <li>
-      <a href="#" class="filter-item">
-        Second filter
-      </a>
-    </li>
-    <li>
-      <a href="#" class="filter-item">
-        Third filter
-      </a>
-    </li>
-  </ul>
-</div>
-
-
-<!-- <div class="container"> -->
-  {{content}}
-<!-- </div> -->
+{{content}}

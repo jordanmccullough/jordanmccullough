@@ -31,12 +31,24 @@ a{
   -webkit-transition: background 500ms, border 500ms;
   transition: background 500ms, border 500ms;
 
+  .hidden{
+    width: 0;
+  }
+
   li{
     display: inline-block;
     margin-top: 10px;
 
     .filter-item{
       width: 150px;
+
+    }
+
+    &.active{
+      .filter-item{
+        background-color: $color-primary;
+        color: $color-light;
+      }
     }
   }
 
@@ -80,11 +92,13 @@ a{
     padding-top: 100px;
 
 
-    background-image: url(../images/tool-set.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-attachment: fixed;
-    background-size: 50%;
+    margin-bottom: 80px;
+
+    // background-image: url(../images/tool-set.png);
+    // background-repeat: no-repeat;
+    // background-position: right;
+    // background-attachment: fixed;
+    // background-size: 50%;
   }
 
 

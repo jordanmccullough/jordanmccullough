@@ -2,6 +2,20 @@
 layout: home
 ---
 
+<div id="sub-nav" class="sub-nav" data-spy="affix" data-offset-top="400">
+  <ul class="nav filter-list text-center">
+    <li><a href="#top" class="active filter-item hidden">top</a></li>
+    <li><a href="#overview" class="filter-item">Overview</a></li>
+    <li><a href="#training" class="filter-item">Training</a></li>
+  </ul>
+</div>
+
+<h1 id="top"></h1>
+<p>HEllo</p>
+
+
+<h2 id="overview">Overview</h2>
+
 <div class="row">
   <div class="container">
     <div class="col-md-6">
@@ -25,55 +39,54 @@ layout: home
 
 
 <div class="container proserv">
-    <h1>Professional Services</h1>
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-3"><h2>Quickstart</h2></div>
-      <div class="col-md-3"><h2>Training</h2></div>
-      <div class="col-md-3"><h2>Consulting</h2></div>
-    </div>
 
-    <div class="row horizontal-divider">
-      <div class="col-md-3">
-        <h3>Objectives</h3>
-      </div>
-      <div class="col-md-3">
-        <ul>
-          <li>Instance setup and configuration</li>
-          <li>Administration, command line utilties, and audit log review</li>
-          <li>Sample repository creation</li>
-          <li>GitHub feature mapping to team requirements</li>
-          <li>Version control best practices and workflow discussion</li>
-          <li>Introduction to Git DVCS, command line use</li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul>
-          <li>Classroom instruction on GitHub terminology and patterns</li>
-          <li>Lab-based learning of the GitHub Flow</li>
-          <li>Exploration of GitHub for Desktop client applications</li>
-          <li>Demonstration of command line interaction with GitHub</li>
-          <li>Skills exam and certification</li>
-          <li>Project and team-specific GitHub process mapping</li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul>
-          <li>Extended configuration and custom setup assistance</li>
-          <li>Roll-out planning with GitHub instance owners, team leads</li>
-          <li>Customized best practices and workflow strategies</li>
-          <li>Direct assistance with third-party tool integrations</li>
-          <li>Repository migration from legacy version control systems</li>
-        </ul>
-      </div>
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3"><h2>Quickstart</h2></div>
+    <div class="col-md-3"><h2>Training</h2></div>
+    <div class="col-md-3"><h2>Consulting</h2></div>
+  </div>
+
+  <div class="row horizontal-divider">
+    <div class="col-md-3">
+      <h3>Objectives</h3>
     </div>
+    <div class="col-md-3">
+      <ul>
+        <li>Instance setup and configuration</li>
+        <li>Administration, command line utilties, and audit log review</li>
+        <li>Sample repository creation</li>
+        <li>GitHub feature mapping to team requirements</li>
+        <li>Version control best practices and workflow discussion</li>
+        <li>Introduction to Git DVCS, command line use</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul>
+        <li>Classroom instruction on GitHub terminology and patterns</li>
+        <li>Lab-based learning of the GitHub Flow</li>
+        <li>Exploration of GitHub for Desktop client applications</li>
+        <li>Demonstration of command line interaction with GitHub</li>
+        <li>Skills exam and certification</li>
+        <li>Project and team-specific GitHub process mapping</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul>
+        <li>Extended configuration and custom setup assistance</li>
+        <li>Roll-out planning with GitHub instance owners, team leads</li>
+        <li>Customized best practices and workflow strategies</li>
+        <li>Direct assistance with third-party tool integrations</li>
+        <li>Repository migration from legacy version control systems</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 
 <div class="container training">
-  <h2>Training</h2>
-
-
+  <h2 id="training">Training</h2>
 
   <div class="row">
     <div class="col-md-3"></div>
