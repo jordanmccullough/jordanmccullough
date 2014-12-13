@@ -10,17 +10,12 @@ layout: home
   </ul>
 </div>
 
-<h2 id="overview">Overview</h2>
 
-<div class="row">
-  <div class="container">
-    <div class="col-md-6">
-      <p>Streamline your GitHub Enterprise setup with the help of GitHub Professional Services. Our team of experts delivers initial setup assistance, continuing education and custom integrations. Realize the value of your GitHub investment as quickly as possible through our time-saving techniques and best practices.</p>
-    </div>
-    <div class="col-md-6">
+<div class="container">
+  <h2 id="overview">Overview</h2>
+  <p>Streamline your GitHub Enterprise setup with the help of GitHub Professional Services. Our team of experts delivers initial setup assistance, continuing education and custom integrations. Realize the value of your GitHub investment as quickly as possible through our time-saving techniques and best practices.</p>
 
-    </div>
-  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis tellus vitae tellus suscipit, sed commodo erat viverra. Etiam nunc nulla, fringilla ut lectus sed, bibendum rutrum sem. Duis vel elit in diam rhoncus porttitor. Curabitur leo velit, sodales ac mollis elementum, lobortis et ipsum. Cras elementum leo ut dolor tristique, quis pellentesque libero tincidunt. Pellentesque accumsan arcu sodales, cursus urna quis, suscipit risus. Vestibulum accumsan viverra tortor nec dignissim. Duis quis mi hendrerit, tempor nisi nec, cursus quam.</p>
 </div>
 
 <div class="row container-dim">

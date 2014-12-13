@@ -21,7 +21,11 @@ a{
   // color: $color-secondary;
 }
 
-
+.navbar{
+  a{
+    color: $color-light;
+  }
+}
 
 .sub-nav{
   position: fixed;
