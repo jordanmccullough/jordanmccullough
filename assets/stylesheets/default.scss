@@ -36,6 +36,10 @@ a{
   -webkit-transition: background 500ms, border 500ms;
   transition: background 500ms, border 500ms;
 
+  & + .container{
+
+  }
+
   .hidden{
     width: 0;
   }
@@ -96,7 +100,7 @@ a{
     padding-top: 100px;
 
 
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
 
     // background-image: url(../images/tool-set.png);
     // background-repeat: no-repeat;
@@ -136,7 +140,7 @@ a{
 .container-dim{
   background: $color-light;
   padding: 5% 0;
-  margin: 5% 0;
+  margin: 0;
 }
 
 .navbar-proserv{

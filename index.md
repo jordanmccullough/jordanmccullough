@@ -6,6 +6,7 @@ layout: home
   <ul class="nav filter-list text-center">
     <li><a href="#top" class="active filter-item hidden">top</a></li>
     <li><a href="#overview" class="filter-item">Overview</a></li>
+    <li><a href="#testimonials" class="filter-item">Testimonials</a></li>
     <li><a href="#training" class="filter-item">Training</a></li>
   </ul>
 </div>
@@ -29,6 +30,7 @@ layout: home
 </div>
 
 <div class="container">
+  <h2 id="testimonials">Testimonials</h2>
 
   <div class="row back-and-forth">
     <!-- <div class="col-md-6"> -->
