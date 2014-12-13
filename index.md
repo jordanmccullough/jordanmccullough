@@ -28,6 +28,52 @@ layout: home
   </div>
 </div>
 
+<div class="container">
+
+  <div class="row back-and-forth">
+    <!-- <div class="col-md-6"> -->
+      <h3>one</h3>
+      <p>Hello</p>
+    <!-- </div> -->
+  </div>
+
+  <div class="row back-and-forth">
+    <!-- <div class="col-md-6"> -->
+      <h3>two</h3>
+      <p>Hello</p>
+    <!-- </div> -->
+  </div>
+
+  <div class="row back-and-forth">
+    <!-- <div class="col-md-6"> -->
+      <h3>three</h3>
+      <p>Hello</p>
+    <!-- </div> -->
+  </div>
+
+  <div class="row back-and-forth">
+    <!-- <div class="col-md-6"> -->
+      <h3>four</h3>
+      <p>Hello</p>
+    <!-- </div> -->
+  </div>
+
+  <div class="row back-and-forth">
+    <!-- <div class="col-md-6"> -->
+      <h3>five</h3>
+      <p>Hello</p>
+    <!-- </div> -->
+  </div>
+
+  <div class="row back-and-forth">
+    <!-- <div class="col-md-6"> -->
+      <h3>six</h3>
+      <p>Hello</p>
+    <!-- </div> -->
+  </div>
+
+</div>
+
 
 <div class="container proserv">
 

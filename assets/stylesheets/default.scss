@@ -67,7 +67,6 @@ a{
     background: rgba($color-white, .8);
     border-bottom: solid 1px $color-light;
   }
-
 }
 
 .home{
@@ -105,9 +104,34 @@ a{
     // background-attachment: fixed;
     // background-size: 50%;
   }
-
-
 }
+
+
+.back-and-forth{
+  h3{
+    float: left;
+    margin: 0;
+    width: 50%;
+  }
+  p{
+    float:right;
+    width: 50%;
+  }
+
+  &:nth-child(2n+1){
+    background: red;
+
+    h3{
+      float: right;
+      margin: 0;
+    }
+    p{
+      float:right;
+    }
+
+  }
+}
+
 
 .container-dim{
   background: $color-light;
