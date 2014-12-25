@@ -3,7 +3,7 @@ layout: default
 body_class: home
 ---
 
-<nav class="navbar navbar-proserv" role="navigation">
+<!-- <nav class="navbar navbar-proserv" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -12,10 +12,9 @@ body_class: home
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><div class="branding"><span>GitHub Professional Services<span></div></a>
+      <a class="navbar-brand" href="#"><span>Jordan McCullough<span></a>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Solutions</a></li>
@@ -25,20 +24,86 @@ body_class: home
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 
-<div class="jumbotron">
+<div class="container text-center">
+  <h2 class="brand">Jordan McCullough</h2>
+</div>
+<div class="jumbotron text-center">
   <div class="container">
     <div class="row">
+      <div class="col-md-3"></div>
       <div class="col-md-6">
-        <h2 id="top">Platform success. Implementation to integration.</h2>
-        <p>Streamline your GitHub Enterprise setup with the help of GitHub Professional Services. Our team of experts delivers initial setup assistance, continuing education and custom integrations. Realize the value of your GitHub investment as quickly as possible through our time-saving techniques and best practices.</p>
+        <h2>Donec congue lacinia ligula, vel semper dolor pulvinar eget</h2>
       </div>
-      <div class="col-md-6 headline-image">
+      <div class="col-md-3"></div>
+    </div>
 
+    <div class="row">
+      <!-- <div class="col-md-2"></div> -->
+
+      <div class="col-md-12">
+        <div class="category-sum art">
+          <div class="topic-count">
+            {{site.categories.art.size}}
+          </div>
+          <div class="topic-title">
+            art
+          </div>
+        </div>
+
+        <div class="category-sum food">
+          <div class="topic-count">
+            {{site.categories.food.size}}
+          </div>
+          <div class="topic-title">
+            food
+          </div>
+        </div>
+
+        <div class="category-sum awesome">
+          <div class="topic-count">
+            {{site.categories.awesome.size}}
+          </div>
+          <div class="topic-title">
+            awesomeness
+          </div>
+        </div>
+
+        <div class="category-sum design">
+          <div class="topic-count">
+            {{site.categories.design.size}}
+          </div>
+          <div class="topic-title">
+            food
+          </div>
+        </div>
+
+        <div class="category-sum biz">
+          <div class="topic-count">
+            {{site.categories.biz.size}}
+          </div>
+          <div class="topic-title">
+            awesomeness
+          </div>
+        </div>
       </div>
+
+      <!-- <div class="col-md-2"></div> -->
     </div>
   </div>
 </div>
 
-{{content}}
+
+<!-- <div id="sub-nav" class="sub-nav" data-spy="affix" data-offset-top="400">
+  <ul class="nav filter-list text-center">
+    <li><a href="#top" class="active filter-item hidden">top</a></li>
+    <li><a href="#overview" class="filter-item">Overview</a></li>
+    <li><a href="#testimonials" class="filter-item">Testimonials</a></li>
+    <li><a href="#training" class="filter-item">Training</a></li>
+  </ul>
+</div> -->
+
+<div class="container">
+  {{content}}
+</div>

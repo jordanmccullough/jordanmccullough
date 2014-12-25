@@ -3,27 +3,151 @@
 ---
 
 @import "bootstrap-sass/lib/bootstrap.scss";
-@import "primer/primer.scss";
+// @import "primer/primer.scss";
 
-$color-primary: rgb(106,38,68);
+$color-primary: #80aec7;
 $color-secondary: rgb(43,0,29);
 $color-bright: rgb(244,244,244);
-$color-dark: #3a3a3a;
+$color-dark: #27272b;
 $color-light: #f3f3f3;
 $color-white: #ffffff;
 
+$default-size: 14px;
 
 body{
   position: relative;
+  background: $color-light;
+  color: $color-dark;
 }
 
 a{
-  // color: $color-secondary;
+  color: rgba($color-dark, .5);
 }
 
 .navbar{
   a{
     color: $color-light;
+  }
+}
+
+.art{
+ margin-top: auto;
+}
+.food{
+  margin-top: 40px;
+}
+.awesome{
+  margin-top: 25px;
+}
+.design{
+  margin-top: 15px;
+}
+.biz{
+  margin-top: 50px;
+}
+
+
+.category-sum{
+  width: 20%;
+  float: left;
+
+  .topic-count{
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    box-shadow: 0 0 0 2px $color-primary;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 30px;
+    margin: 0 auto;
+    transition: background-color 300ms, color 900ms;
+  }
+
+  .topic-title{
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: solid 2px transparent;
+  }
+
+  &:hover{
+    .topic-count{
+      background-color: darken($color-primary, 30%);
+    }
+    .topic-title{
+      color: $color-primary;
+      // border-bottom: solid 2px $color-primary;
+    }
+  }
+}
+
+.post-summary{
+  text-align: center;
+  // margin-top: 56px;
+  margin-bottom: 10px;
+
+  a{
+    text-decoration: none;
+    transition: color 300ms;
+    color: $color-dark;
+  }
+
+  .wrap{
+    // border: solid 1px rgba(0,0,0,.1);
+    border-radius: 3px;
+    margin: 0 6px;
+    padding: 20px 20px;
+    display: block;
+    transition: background 300ms;
+    color: $color-dark;
+
+    &:hover{
+      // background: rgba($color-white, 10%);
+
+      a{
+        // color: darken($color-dark,50%);
+      }
+    }
+  }
+
+  .date{
+
+  }
+
+  p{
+    line-height: 1.8em;
+    font-size: 13px;
+  }
+
+  h2{
+    font-size: $default-size;
+    color: $color-dark;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+
+    &:before{
+      content: attr(data-date);
+      display: block;
+      color: rgba($color-primary, .3);
+      text-align: center;
+      font-family: courier;
+      font-size: 32px;
+      font-weight: 200;
+      margin-bottom: 5px;
+    }
+
+    &:after{
+      content: "";
+      width: 120px;
+      height: 2px;
+      background: rgba(0,0,0,.1);
+      display: block;
+      margin: 20px auto;
+    }
   }
 }
 
@@ -80,86 +204,26 @@ a{
     list-style: none;
 
     li{
-      // margin-bottom: 1em;
-
       &:last-child{
         margin-bottom: 0;
       }
     }
   }
 
-  // a{
-  //   color: $color-bright;
-  // }
-
   .jumbotron{
-    background: $color-primary;
+    background: $color-dark;
     color: $color-bright;
-    height: 400px;
-    margin-top: -100px; //Nav height
-    padding-top: 100px;
-
-
-    // margin-bottom: 80px;
-
-    // background-image: url(../images/tool-set.png);
-    // background-repeat: no-repeat;
-    // background-position: right;
-    // background-attachment: fixed;
-    // background-size: 50%;
+    height: 350px;
+    // margin-top: -100px; //Nav height
+    // padding-top: 100px;
   }
 }
 
 
-.back-and-forth{
-  h3{
-    float: left;
-    margin: 0;
-    width: 50%;
-  }
-  p{
-    float:right;
-    width: 50%;
-  }
 
-  &:nth-child(2n+1){
-    background: red;
-
-    h3{
-      float: right;
-      margin: 0;
-    }
-    p{
-      float:right;
-    }
-
-  }
-}
-
-
-.container-dim{
-  background: $color-light;
-  padding: 5% 0;
-  margin: 0;
-}
-
-.navbar-proserv{
-  height: 100px;
-  padding-top: 25px;
-  // background: $color-primary;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-
-.branding{
-  background: url(../images/github-proserv-logo-2x.png) no-repeat;
-  background-size: contain;
-  height: 26px;
-  width: 275px;
-
-  span{
-    visibility: hidden;
-  }
+.brand{
+  font-size: 16px;
+  font-weight: 200;
 }
 
 .grid{
@@ -175,31 +239,5 @@ a{
     right: 0;
     height: 100%;
     border-right: solid 1px rgba(#999,.3);
-  }
-}
-
-.horizontal-divider{
-  &:after{
-    content: " ";
-    display: inline-block;
-    width: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-bottom: solid 1px rgba(#999,.3);
-  }
-}
-
-.proserv, .training{
-  margin-bottom: 4em;
-
-  h1{
-    margin-bottom: 1em;
-  }
-  h2{
-    margin-bottom: 1em;
-    font-size: 160%;
-  }
-  h2,h3{
-    color: rgba(#000,.4);
   }
 }
