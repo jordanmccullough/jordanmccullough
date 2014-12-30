@@ -3,34 +3,14 @@ layout: default
 body_class: home
 ---
 
-<!-- <nav class="navbar navbar-proserv" role="navigation">
+<!-- <nav>
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><span>Jordan McCullough<span></a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Training</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+    [LOGO]
   </div>
 </nav> -->
 
-<div class="container text-center">
-  <h2 class="brand">Jordan McCullough</h2>
-</div>
 <div class="jumbotron text-center">
-  <div class="container">
+  <div class="container headline">
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
@@ -39,14 +19,14 @@ body_class: home
       <div class="col-md-3"></div>
     </div>
 
+    <!--
     <div class="row">
-      <!-- <div class="col-md-2"></div> -->
-
       <div class="col-md-12">
         <div class="category-sum art">
           <div class="topic-count">
             {{site.categories.art.size}}
           </div>
+          <div class="topic-count-bg"></div>
           <div class="topic-title">
             art
           </div>
@@ -56,6 +36,7 @@ body_class: home
           <div class="topic-count">
             {{site.categories.food.size}}
           </div>
+          <div class="topic-count-bg"></div>
           <div class="topic-title">
             food
           </div>
@@ -65,6 +46,7 @@ body_class: home
           <div class="topic-count">
             {{site.categories.awesome.size}}
           </div>
+          <div class="topic-count-bg"></div>
           <div class="topic-title">
             awesomeness
           </div>
@@ -74,6 +56,7 @@ body_class: home
           <div class="topic-count">
             {{site.categories.design.size}}
           </div>
+          <div class="topic-count-bg"></div>
           <div class="topic-title">
             food
           </div>
@@ -83,27 +66,59 @@ body_class: home
           <div class="topic-count">
             {{site.categories.biz.size}}
           </div>
+          <div class="topic-count-bg"></div>
           <div class="topic-title">
             awesomeness
           </div>
         </div>
       </div>
-
-      <!-- <div class="col-md-2"></div> -->
-    </div>
+    </div>-->
   </div>
+
+  <div class="background"></div>
 </div>
 
-
-<!-- <div id="sub-nav" class="sub-nav" data-spy="affix" data-offset-top="400">
-  <ul class="nav filter-list text-center">
-    <li><a href="#top" class="active filter-item hidden">top</a></li>
-    <li><a href="#overview" class="filter-item">Overview</a></li>
-    <li><a href="#testimonials" class="filter-item">Testimonials</a></li>
-    <li><a href="#training" class="filter-item">Training</a></li>
-  </ul>
-</div> -->
-
-<div class="container">
+<!-- <div class="container"> -->
   {{content}}
-</div>
+<!-- </div> -->
+
+<script>
+  var panel = $('.jumbotron'),
+      bg = $('.background'),
+      headline = $(".headline"),
+      outerHeight = panel.outerHeight();
+
+  var blur = "2";
+
+
+  var accelleration = 1.66;
+
+
+  // var topicCountBg = $(".topic-count-bg");
+  // topicCountBg.css("background", bg.css("background") + " ");
+  // topicCountBg.css("background-size", "auto");
+
+  // topicCountBg.css({
+  //   'filter'         : 'blur(' + blur + 'px)',
+  //   '-webkit-filter' : 'blur(' + blur + 'px)',
+  //   '-moz-filter'    : 'blur(' + blur + 'px)',
+  //   '-o-filter'      : 'blur(' + blur + 'px)',
+  //   '-ms-filter'     : 'blur(' + blur + 'px)'
+  // });
+
+  function parallax(){
+    var scrolled = $(window).scrollTop();
+    bg.css("top", "-" + Math.round((scrolled)/7) + "px");
+    headline.css("top", Math.round((scrolled)/3) + "px");
+
+    headline.css("opacity", 1-(scrolled/outerHeight)*accelleration);
+
+    console.log(Math.round(scrolled/outerHeight, -5));
+
+
+  }
+
+  $(window).scroll(function(e){
+    parallax();
+  });
+</script>
