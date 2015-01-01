@@ -28,12 +28,12 @@ h1,h2,h3,h4,h5,h6{
 
 .back-and-forth{
   border-top: 8px solid $body-bg;
-  background: lighten($gray-lighter, 4%);
+  background: lighten($gray-lighter, 5%);
   padding: 20px 0;
 
   &:nth-child(2n){
-    // background: lighten($gray-lighter, 3%);
-    background: red;
+    background: lighten($gray-lighter, 3%);
+    background: $body-bg;
 
     & .center{
       float: auto;
