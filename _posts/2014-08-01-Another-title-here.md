@@ -1,6 +1,6 @@
 ---
 layout: post
-category: draft
+category:
 summary: Phasellus tincidunt felis eget venenatis euismod. Fusce ac lectus aliquam, tristique nulla quis, convallis sapien.
 ---
 

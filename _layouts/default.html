@@ -15,5 +15,34 @@
 
   <body class="{{page.body_class}}" data-spy="scroll" data-target="#sub-nav" data-offset="60">
     {{ content }}
+
+
+    <script>
+    var panel = $('.gallery'),
+        bg = panel.children(".bg"),
+        headline = $(".caption"),
+        outerHeight = panel.outerHeight(),
+        // blur = "2",
+        accelleration = 1.66;
+
+      console.log(bg);
+
+      // bg.css("background", "red");
+
+    function parallax(){
+      var scrolled = $(window).scrollTop();
+      bg.css("top", "-" + Math.ceil((scrolled)/10) + "px");
+      headline.css("padding-top", Math.ceil((scrolled)/2) + "px");
+      headline.css("opacity", 1-(scrolled/outerHeight));
+
+      // console.log(Math.round(scrolled/outerHeight, -5));
+
+
+    }
+
+    $(window).scroll(function(e){
+      parallax();
+    });
+    </script>
   </body>
 </html>

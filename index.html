@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-center">
+      {% include opening.html %}
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<div class="gallery">
+  <div class="wrapper">
+    <div class="caption">Journey</div>
+  </div>
+  <div class="bg bw"></div>
+</div>
+
+
+{% for post in site.posts %}
+
+  {% if post.category != "draft" %}
+    <div class="row back-and-forth post">
+
+      <div class="container">
+
+        {% if post.cover %}
+          <div class="col-md-2"></div>
+        {% endif %}
+
+        <div class="col-md-8 {% if post.cover %}center{% endif %}">
+          <h3 data-date="{{post.date | date: '%b %-d %y'}}">
+            {{post.title}}
+          </h3>
+
+          <div class="date">
+            {{post.date | date: "%b %-d '%y"}}
+          </div>
+
+          <div class="description">
+            <p>{{post.summary | truncatewords: 28}}</p>
+          </div>
+        </div>
+
+        {% if post.cover %}
+        <div class="col-md-2"></div>
+        {% else %}
+          <div class="col-md-4">
+            Big image
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+  {% endif %}
+{% endfor %}
+
+
+<!-- <div class="row dim">
+  <div class="col-md-3">
+    Just a piece
+  </div>
+
+  <div class="col-md-3">
+  section
+  </div>
+
+  <div class="col-md-3">
+  more
+  </div>
+
+  <div class="col-md-3">
+  another
+  </div>
+</div> -->
+
+<!-- <div class="container">
+  {% for post in site.posts %}
+    {% if post.category != "draft" %}
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center">
+
+          <a href="{{ post.url }}">
+            <h3 data-date="{{post.date | date: "%b %-d '%y"}}">
+              {{post.title}}
+            </h3>
+          </a>
+          <a href="{{ post.url }}">
+            <p>{{post.summary | truncatewords: 28}}</p>
+          </a>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div> -->

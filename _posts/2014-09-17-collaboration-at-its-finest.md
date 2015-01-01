@@ -1,6 +1,7 @@
 ---
 layout: post
 category: design
+cover: "path1.jpg"
 summary: Sed et volutpat metus. Fusce ac arcu eu lorem volutpat semper. Donec ac lacus purus. Vivamus laoreet lectus sapien, a sodales tellus efficitur ac.
 ---
 
